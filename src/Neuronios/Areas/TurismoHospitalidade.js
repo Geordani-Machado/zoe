@@ -1,48 +1,54 @@
 
-      const Keywords = [
+const Keywords = [
   "turismo",
-  "hotelaria",
-  "viagem",
-  "destino turístico",
   "hospitalidade",
-  "setor hoteleiro",
-  "gastronomia",
-  "entretenimento",
-  "atendimento ao cliente",
-  "planejamento de viagens",
+  "hotelaria",
+  "agência", "de", "viagens",
+  "destino", "turístico",
   "ecoturismo",
-  "turismo cultural",
-  "agência de viagens",
-  "hospitalidade de luxo",
-  "guia turístico",
-  "experiências turísticas",
-  "recepcionista",
-  "turismo sustentável",
-  "turismo de aventura",
-  "serviços hoteleiros",
+  "turismo", "cultural",
+  "turismo", "de", "aventura",
+  "atendimento",  
+  "cliente",
+  "gastronomia",
+  "eventos",
+  "guia", "turístico",
+  "resorts",
   "hospedagem",
-  "entretenimento turístico",
-  "atividades recreativas",
-  "atendimento personalizado",
-  "roteiros turísticos",
-  "relações públicas no turismo",
-  "cuidado do cliente",
-  "turismo gastronômico",
-  "gerenciamento de hospedagem",
-  "gestão de eventos"
+  "gestão", "hoteleira",
+  "turismo", "sustentável",
+  "marketing", "turístico",
+  "parques", "temáticos",
+  "viagens", "corporativas",
+  "entretenimento", "turístico",
+  "animação", "turística",
+  "gestão","eventos",
+  "turismo", "luxo",
+  "operadores", "turísticos",
+  "turismo", "rural",
+  "serviços", "alimentação",
+  "gerenciamento", "restaurantes",
+  "patrimônio", "cultural",
+  "gestão", "destinos",
+  "turismo", "saúde", "bem-estar"
 ];
 
       function verificarTurismoHospitalidade(filteredParts) {
         let count = 0;
 
-        for (const part of filteredParts) {
-          if (Keywords.includes(part.toLowerCase())) {
-            count++;
-          }
-        }
-
-        return count;
+  for (const part of filteredParts) {
+    const normalizedPart = part.toLowerCase().replace(/'/g, '');
+    for (const keyword of Keywords) {
+      const normalizedKeyword = keyword.toLowerCase().replace(/'/g, ''); // Remove the '.join("")' part
+      if (normalizedKeyword.includes(normalizedPart)) {
+        count++;
+        break;
       }
+    }
+  }
+
+  return count;
+}
 
       module.exports = verificarTurismoHospitalidade;
     

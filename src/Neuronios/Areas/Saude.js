@@ -1,24 +1,66 @@
-// Lista de palavras relacionadas ao contexto de saúde
+
 const Keywords = [
-    'saúde', 'bem-estar', 'cuidado', 'prevenção', 'medicina', 'doença',
-    'tratamento', 'hospital', 'médico', 'nutrição', 'exercício', 'dieta',
-    'consultório', 'medicamento', 'vitamina', 'check-up', 'reabilitação', 'vacina',
-    'cirurgia', 'enfermagem', 'recuperação', 'ambulância', 'terapia', 'emagrecimento',
-    'psicologia', 'psicoterapia', 'fisioterapia', 'saúde mental', 'cardiologia', 'ginecologia'
-  ];
-  
-  // Função para verificar se o array contém palavras de saúde
-  function verificar(filteredParts) {
-  let count = 0; // Inicialize o contador dentro da função
-  
-  for (const part of filteredParts) {
-    if (Keywords.includes(part.toLowerCase())) {
-      count++; // Incrementar o contador quando uma palavra de saúde é encontrada
-    }
-  }
-  
-  return count; // Retornar o valor do contador após verificar todas as partes
-  }
-  
-  module.exports = verificar;
-  
+  "saúde",
+  "medicina",
+  "enfermagem",
+  "médico",
+  "enfermeiro",
+  "hospital",
+  "clínica",
+  "paciente",
+  "diagnóstico",
+  "tratamento",
+  "prevenção",
+  "mental",
+  "pública",
+  "pesquisa",
+  "médica",
+  "farmácia",
+  "atendimento", 
+  "médico",
+  "cuidados", 
+  "saúde",
+  "medicina", "alternativa",
+  "tecnologia", "médica",
+  "profissional", ,
+  "fisioterapia",
+  "nutrição",
+  "terapia", 
+  "ocupacional",
+  "radiologia",
+  "cirurgia",
+  "pediatria",
+  "geriatria",
+  "obstetrícia",
+  "ginecologia",
+  "cardiologia",
+  "oncologia",
+  "psicologia",
+  "psiquiatria",
+  "odontologia",
+  "infantil",
+  "materna",
+  "comunitária",
+  "preventiva",
+  "bem-estar"
+];
+
+      function verificarSaude(filteredParts) {
+        let count = 0;
+
+        for (const part of filteredParts) {
+          const normalizedPart = part.toLowerCase().replace(/'/g, '');
+          for (const keyword of Keywords) {
+            const normalizedKeyword = keyword.toLowerCase().replace(/'/g, ''); // Remove the '.join("")' part
+            if (normalizedKeyword.includes(normalizedPart)) {
+              count++;
+              break;
+            }
+          }
+        }
+      
+        return count;
+      }
+
+      module.exports = verificarSaude;
+    
