@@ -41,12 +41,16 @@ function verificarEngenharia(filteredParts) {
   let count = 0;
 
   for (const part of filteredParts) {
-    const normalizedPart = part.toLowerCase().replace(/'/g, '');
-    for (const keyword of Keywords) {
-      const normalizedKeyword = keyword.toLowerCase().replace(/'/g, ''); // Remove the '.join("")' part
-      if (normalizedKeyword.includes(normalizedPart)) {
-        count++;
-        break;
+    if (part) { // Verifica se 'part' não é undefined ou null
+      const normalizedPart = part.toLowerCase().replace(/'/g, '');
+      for (const keyword of Keywords) {
+        if (keyword) { // Verifica se 'keyword' não é undefined ou null
+          const normalizedKeyword = keyword.toLowerCase().replace(/'/g, '');
+          if (normalizedKeyword === normalizedPart) { // Verifica igualdade exata
+            count++;
+            break;
+          }
+        }
       }
     }
   }
