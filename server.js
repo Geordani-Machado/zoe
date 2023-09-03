@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const https = require('https');
 const app = express();
 const port = 3000
@@ -9,42 +10,15 @@ app.use(bodyParser.urlencoded({ extended: true })); // Use o body-parser
 
 app.use(bodyParser.json());
 
+const corsOptions = {
+  origin: 'http://127.0.0.1:5173',  // substitua pela origem do seu cliente
+  credentials: true  // permite cookies
+};
+
+app.use(cors(corsOptions));
 
 //const neuroniosAreas = require('./src/Neuronios/Areas'); // Provide the correct path to your Areas module
-const srcverificarAreaDeConhecimento = require('./src/Sinapse/AreaDeConhecimento');
-
-// Function to color text based on percentage
-function colorirTexto(porcentagem) {
-  if (porcentagem <= 0.5) {
-    return `${porcentagem.toFixed(2)}`; // Red
-  } else if (porcentagem >= 4.5) {
-    return `${porcentagem.toFixed(2)}`; // Green
-  } else {
-    return porcentagem.toFixed(2);
-  }
-}
-
-// Function to check Area de Conhecimento and return the result
-function verificarAreaDeConhecimento(Parts) {
-  const results = {};
-
-  // Importa dinamicamente todos os módulos do diretório Areas
-  const areasDir = path.join(__dirname, 'src', 'Neuronios', 'Areas');
-  const areaFiles = fs.readdirSync(areasDir);
-
-  areaFiles.forEach(file => {
-    if (file.endsWith('.js')) {
-      const moduleName = path.basename(file, '.js');
-      const module = require(path.join(areasDir, file));
-      const porcentagem = module(Parts);
-
-      // Como o valor já vem em porcentagem, simplesmente o armazenamos
-      results[moduleName] = porcentagem;
-    }
-  });
-
-  return results;
-}
+const verificarAreaDeConhecimento = require('./src/Sinapse/AreaDeConhecimento');
 
 
 // Lista de palavras de ligação para remover
@@ -108,6 +82,118 @@ app.post('/api/conversation', (req, res) => {
 
 /**
  * @swagger
+ * /api/stopWords:
+ *   get:
+ *     summary: Listar todas as Stop Words
+ *     tags: ['Stop Words']
+ *     responses:
+ *       200:
+ *         description: Lista de todas as Stop Words.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: string
+ */
+app.get('/api/stopWords', (req, res) => {
+  res.json(stopWords);
+});
+
+/**
+ * @swagger
+ * /api/stopWords:
+ *   post:
+ *     summary: Adicionar uma nova Stop Word
+ *     tags: ['Stop Words']
+ *     requestBody:
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               word:
+ *                 type: string
+ *             required:
+ *               - word
+ *     responses:
+ *       200:
+ *         description: Nova Stop Word adicionada com sucesso.
+ */
+app.post('/api/stopWords', (req, res) => {
+  const { word } = req.body;
+  stopWords.push(word);
+  res.json({ message: 'Palavra adicionada', stopWords });
+});
+
+/**
+ * @swagger
+ * /api/stopWords/{word}:
+ *   put:
+ *     summary: Atualiza uma Stop Word específica
+ *     tags: ['Stop Words']
+ *     parameters:
+ *       - name: word
+ *         in: path
+ *         required: true
+ *         description: A Stop Word para atualizar
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               newWord:
+ *                 type: string
+ *             required:
+ *               - newWord
+ *     responses:
+ *       200:
+ *         description: Stop Word atualizada com sucesso.
+ */
+app.put('/api/stopWords', (req, res) => {
+  const { oldWord, newWord } = req.body;
+  const index = stopWords.indexOf(oldWord);
+  if (index !== -1) {
+    stopWords[index] = newWord;
+    res.json({ message: 'Palavra atualizada', stopWords });
+  } else {
+    res.status(404).json({ message: 'Palavra não encontrada' });
+  }
+});
+
+/**
+ * @swagger
+ * /api/stopWords/{word}:
+ *   delete:
+ *     summary: Remove uma Stop Word específica
+ *     tags: ['Stop Words']
+ *     parameters:
+ *       - name: word
+ *         in: path
+ *         required: true
+ *         description: A Stop Word para remover
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Stop Word removida com sucesso.
+ */
+app.delete('/api/stopWords', (req, res) => {
+  const { word } = req.body;
+  const index = stopWords.indexOf(word);
+  if (index !== -1) {
+    stopWords.splice(index, 1);
+    res.json({ message: 'Palavra removida', stopWords });
+  } else {
+    res.status(404).json({ message: 'Palavra não encontrada' });
+  }
+});
+
+/**
+ * @swagger
  * /api/createFile:
  *   post:
  *     summary: Cria um novo arquivo de área de conhecimento
@@ -134,7 +220,6 @@ app.post('/api/conversation', (req, res) => {
  *       500:
  *         description: Erro ao criar o arquivo.
  */
-
 app.post('/api/createFile', (req, res) => {
   const { nome, Keywords } = req.body;
 
@@ -226,7 +311,6 @@ app.post('/api/createFile', (req, res) => {
   }
 });
 
-
 /**
  * @swagger
  * /api/getKeywords/{area}:
@@ -261,7 +345,6 @@ app.get('/api/getKeywords/:area', (req, res) => {
   }
 });
 
-
 /**
  * @swagger
  * /api/listarAreas:
@@ -281,24 +364,10 @@ app.get('/api/listarAreas', (req, res) => {
   res.json({ mensagem: 'Lista de áreas disponíveis', areas: areas });
 });
 
-function extractKeywords(content) {
-  const keywordRegex = /const\s+Keywords\s*=\s*\[([\s\S]*?)\]/;
-  const match = content.match(keywordRegex);
-
-  if (match) {
-    const keywordsContent = match[1];
-    const keywordList = keywordsContent.split(',').map(keyword => keyword.trim().replace(/['"]/g, ''));
-
-    return keywordList;
-  }
-
-  return [];
-}
-
 /**
  * @swagger
  * /api/updateKeywords/{area}:
- *   post:
+ *   put:
  *     summary: Atualiza as palavras-chave de um módulo de área de conhecimento específico
  *     description: Atualiza as palavras-chave de um módulo de área de conhecimento específico com base nos dados fornecidos.
  *     tags: ['Edição e Configuração']
@@ -327,7 +396,7 @@ function extractKeywords(content) {
  *       404:
  *         description: Área de conhecimento não encontrada.
  */
-app.post('/api/updateKeywords/:area', (req, res) => {
+app.put('/api/updateKeywords/:area', (req, res) => {
   const area = req.params.area;
   const keywords = req.body.keywords;
 
@@ -357,6 +426,20 @@ function updateKeywordsInFile(filePath, keywords) {
       content = content.replace(existingKeywords, updatedKeywords);
       fs.writeFileSync(filePath, content);
   }
+}
+
+function extractKeywords(content) {
+  const keywordRegex = /const\s+Keywords\s*=\s*\[([\s\S]*?)\]/;
+  const match = content.match(keywordRegex);
+
+  if (match) {
+    const keywordsContent = match[1];
+    const keywordList = keywordsContent.split(',').map(keyword => keyword.trim().replace(/['"]/g, ''));
+
+    return keywordList;
+  }
+
+  return [];
 }
 
 //Inicializando o Swagger

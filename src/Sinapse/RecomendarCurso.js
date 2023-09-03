@@ -1,11 +1,31 @@
-const cursosJson = require('./cursos.json'); // Importando o arquivo JSON
+const fs = require('fs'); // Importa o módulo de sistema de arquivos
 
 function buscarCincoCursos(area) {
+  let arquivoJsonPath;
+  let cursosJson;
+
+  // Determina qual arquivo JSON ler com base na área de conhecimento
+  switch(area) {
+    case "ArquiteturaeUrbanismoDesign":
+      arquivoJsonPath = '../db/arquitetura-e-urbanismo-design.json';
+      break;
+    // Adicione mais casos aqui para outras áreas
+    default:
+      return "Área de conhecimento não encontrada"; // ou return null;
+  }
+
+  // Lê o arquivo JSON
+  const data = fs.readFileSync(arquivoJsonPath, 'utf-8');
+  cursosJson = JSON.parse(data);
+
   // Filtra os cursos que correspondem à área de conhecimento fornecida
   const cursosFiltrados = cursosJson.cursos.filter(curso => curso.area_do_conhecimento === area);
 
-  // Pega apenas os cinco primeiros cursos após o filtro
-  const cincoCursos = cursosFiltrados.slice(0, 5);
+  // Embaralha o array de cursos filtrados
+  const cursosEmbaralhados = cursosFiltrados.sort(() => 0.5 - Math.random());
+
+  // Pega apenas os cinco primeiros cursos após o embaralhamento
+  const cincoCursos = cursosEmbaralhados.slice(0, 5);
 
   return cincoCursos;
 }
@@ -13,8 +33,3 @@ function buscarCincoCursos(area) {
 // Exportando a função
 module.exports = buscarCincoCursos;
 
-// Exemplo de como importar e usar em outro arquivo
-// const buscarCincoCursos = require('./main');
-// const area = "Ciências Jurídicas";
-// const cincoCursosEncontrados = buscarCincoCursos(area);
-// console.log(cincoCursosEncontrados);

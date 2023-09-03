@@ -1,5 +1,6 @@
 
 const Keywords = [
+  "arquitetar",
   "planta baixa",
   "fachada",
   "urbanismo",
@@ -21,6 +22,7 @@ const Keywords = [
   "pilar",
   "engenharia",
   "planejamento",
+  "planejar",
   "obras",
   "simetria",
   "asimetria",
@@ -86,7 +88,7 @@ function keywordProximity(tokens, keywords) {
   return proximity;
 }
 
-function analyzeHealthInterest(wordArray) {
+function analyzeInterest(wordArray) {
   const tokens = wordArray; // assume que a entrada é um array de palavras
   const counts = wordCounts(tokens);
 
@@ -103,8 +105,8 @@ function analyzeHealthInterest(wordArray) {
 
   const proximityPercentage = (healthScore / tokens.length) * 100;
 
-  return proximityPercentage > 0 ? `${proximityPercentage.toFixed(2)}%` : '0.00%';
+  return proximityPercentage > 0 ? `${proximityPercentage}` : '0';
 }
 
-module.exports = analyzeHealthInterest;
+module.exports = analyzeInterest;
 

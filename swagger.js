@@ -20,6 +20,7 @@ const options = {
         },
       ],
     },
+    
     apis: [path.join(__dirname, './server.js')], // Seus arquivos de rota
   };
 

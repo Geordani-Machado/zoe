@@ -1,0 +1,148 @@
+{
+  "cursos": [
+    {
+      "curso": "Ambientes Computacionais e Conectividade",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/AMBIENTES-COMPUTACIONAIS-E-CONECTIVIDADE-scaled.jpg",
+      "frase_de_impacto_curso": " Seja um especialista em Sistemas de Comunicação de Dados, Serviços em Rede e conectividades. ",
+      "descricao_curso": "O curso aborda temas como: Equipamentos de redes. Arquiteturas de redes OSI, TCP/IP e protocolos. Cloud computing. Implantação de serviços em nuvem. Conceitos de Redes de Computadores. Arquitetura de Redes. Interconexão de Redes. Sistemas de Comunicação de Dados. Serviços básicos em Rede. Projeto lógico e físico. Alta disponibilidade, Integridade, legalidade, confidencialidade e autenticidade. Cálculo de endereçamento IP, Cálculo de dimensionamento de rede. Conceito de Sistemas Operacionais, Algoritmo de escalonamento e cálculo de tempo de espera para avaliar qualidade do algoritmo.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1074\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/ambientes-computacionais-e-conectividade"
+    },
+    {
+      "curso": "Análise de Vulnerabilidades e Testes de Invasão",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Analise-de-Vulnerabilidades-e-Testes-de-Invasao-scaled.jpg",
+      "frase_de_impacto_curso": " Descubra como minimizar ou impedir, inclusive nas organizações, os principais tipos de ataques cibernéticos entre outros. ",
+      "descricao_curso": "O curso aborda as principais questões de segurança em serviços web demonstrando como minimizar ou impedir, inclusive em organizações, os principais tipos de ataques cibernéticos.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=311\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/analise-de-vulnerabilidades-e-testes-de-invasao"
+    },
+    {
+      "curso": "Big Data Analytics",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Big-data-Analytics-scaled.jpg",
+      "frase_de_impacto_curso": " Descubra quais são os principais desafios que precisam ser superados para implementação do Big Data e as ferramentas disponíveis para o mercado atual e suas tendências. ",
+      "descricao_curso": "O Curso proporciona conhecimento acerca do Big Data Analytics, no que se refere à definição, características e gerenciamento, quais são os principais desafios que precisam ser superados para implementação do Big Data, bem como ferramentas disponíveis para o mercado atual e suas tendências.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=314\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/big-data-analytics"
+    },
+    {
+      "curso": "Cenários de Devops",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Cenarios-de-Devops-scaled.jpg",
+      "frase_de_impacto_curso": " Aprimore seus conhecimentos acerca dos conceitos, técnicas e ferramentas para implantação de uma cultura DevOps dentro de uma organização. ",
+      "descricao_curso": "Aprimore seus conhecimentos acerca dos conceitos, técnicas e ferramentas para implantação de uma cultura DevOps dentro do processo de desenvolvimento de softwares de uma organização.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=317\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/cenarios-de-devops"
+    },
+    {
+      "curso": "Computação Forense",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Computacao-Forense-scaled.jpg",
+      "frase_de_impacto_curso": " Desenvolva competências profissionais e metodologias para identificação de crimes no meio digital, desenvolvimento de laudo pericial, coleta de dados voláteis e investigação em sistemas operacionais. ",
+      "descricao_curso": "O curso tem como objetivo o desenvolvimento de competências profissionais e metodologias para identificação de crimes no meio digital, desenvolvimento de laudo pericial, coleta de dados voláteis e investigação em sistemas operacionais.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=320\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/computacao-forense"
+    },
+    {
+      "curso": "Criptografia e Segurança na Comunicação",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Criptografia-e-Seguranca-na-Comunicacao-scaled.jpg",
+      "frase_de_impacto_curso": "Tudo sobre criptografia, segurança de comunicação e da informação, assinaturas digitais e padrões de segurança da informação.",
+      "descricao_curso": "O Curso aborda os princípios em criptografia, segurança de comunicação e da informação. Teoria dos Números e criptografia simétrica e assimétrica. Resumos criptográficos (funções hashing). Autenticação de mensagens. Assinaturas digitais. Cifradores de fluxo e de bloco. Esquemas de estabelecimento de chaves. Protocolos criptográficos. Protocolos Seguros de Comunicação. Criptografia quântica. Análise de Riscos. Leis, normas e padrões de segurança da informação. Auditoria de sistemas. Autenticação e controle de acesso. ",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1014\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/criptografia-e-seguranca-na-comunicacao"
+    },
+    {
+      "curso": "Experiência de Usuário e IA",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Experiencia-de-usuario-e-IA-scaled.jpg",
+      "frase_de_impacto_curso": " Aprimore seus conhecimentos sobre os princípios básicos da experiência de usuário aplicados no desenvolvimento de iniciativas de inteligência artificial.  ",
+      "descricao_curso": "O curso foi elaborado para o profissional que visa aprimorar seus conhecimentos sobre os princípios básicos da experiência de usuário aplicados no desenvolvimento de iniciativas de inteligência artificial. Comportamento do consumidor e fundamentos em metodologia de pesquisa, desenho centrado no usuário e estratégias para a divisão de tarefas humano-máquina.  ",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1022\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/experiencia-de-usuario-e-ia"
+    },
+    {
+      "curso": "Formação Scrum Master e Product Owner",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Formacao-Scrum-Master-e-Product-Owner-scaled.jpg",
+      "frase_de_impacto_curso": " Especialize-se em fundamentos do Scrum, incluindo seus papéis, eventos e artefatos. Manifesto Ágil, cultura e liderança ágil. ",
+      "descricao_curso": "Especialize-se em fundamentos do Scrum, incluindo seus papéis, eventos e artefatos. Manifesto Ágil, cultura e liderança ágil. A mudança de mentalidade de Gerenciamento de Projeto para Gerenciamento de Produto e facilitação de eventos e formação de equipes Scrum. Organização, eventos e artefatos de uma Sprint. O Product Backlog, e formas de priorizar, fatiar, descartar e estimar Histórias de Usuários. Definição de critérios de aceitação e gerenciamento de visão e roadmap do produto.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=685\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/formacao-scrum-master-e-product-owner"
+    },
+    {
+      "curso": "Gerenciamento e Governança de Serviços na Nuvem",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Gerenciamento-e-Governanca-de-Servicos-na-Nuvem-scaled.jpg",
+      "frase_de_impacto_curso": " Especialize-se em monitoramento de recursos e serviço na nuvem; monitoramento de recursos; verificação de disponibilidade; monitoramento dos recursos de rede e servidores; Gestão de dados e muito mais. ",
+      "descricao_curso": "Especialize-se em monitoramento de recursos e serviço na nuvem; monitoramento de recursos; verificação de disponibilidade; monitoramento dos recursos de rede e servidores; Gestão de dados; backup de dados; bancos de dados; alocação de recursos; gerenciamento das licenças de software; Gerenciamento de Acesso; classificação de dados & responsabilidade; proteção de cliente & endpoint; Gestão de infraestrutura de nuvem; definição e disponibilização de VPNs; controles de rede; infraestrutura de host; criação e aplicação de planos de contingência e recuperação de desastres.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1026\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/gerenciamento-e-governanca-de-servicos-na-nuvem"
+    },
+    {
+      "curso": "Infraestrutura para Cloud Computing e Big Data",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Infraestrutura-para-Cloud-Computing-e-Big-Data-copiar-scaled.jpg",
+      "frase_de_impacto_curso": " Entenda a definição e Histórico de Cloud computing; Redes de Computadores;  Datacenters; TIA 942; Meios de transmissão de Dados; Tipos de Nuvens; Serviços em Nuvem; ",
+      "descricao_curso": "O Curso proporciona conhecimento acerca  da definição e Histórico de Cloud computing; Redes de Computadores;  Datacenters; TIA 942; Meios de transmissão de Dados; Tipos de Nuvens; Serviços em Nuvem; Serviços AWS; Serviços de Machine Learning em Nuvem; LGPD; SQL e No SQL; Teoria dos Grafos; Algoritmos de Caminhos Mínimos; Hadoop; Tipos de Bases de Dados NoSQL;",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=693\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/infraestrutura-para-cloud-computing-e-big-data"
+    },
+    {
+      "curso": "Metodologia Ágil em Larga Escala",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Metodologia-Agil-em-Larga-Escala-scaled.jpg",
+      "frase_de_impacto_curso": " Aprimore seus conhecimentos sobre as metodologias ágeis escaláveis. Os desafios da aplicação de frameworks ágeis em grandes empresas e produtos e muito mais. ",
+      "descricao_curso": "O curso foi elaborado para o profissional que visa aprimorar seus conhecimentos sobre as metodologias ágeis escaláveis. Os desafios da aplicação de frameworks ágeis em grandes empresas e produtos. Gestão de incrementos e dependências entre times ágeis. Apresentação dos principais frameworks escaláveis Scrum. ",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1038\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/metodologia-agil-em-larga-escala"
+    },
+    {
+      "curso": "Modelagem de Software",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/MODELAGEM-E-SOFTWARE-scaled.jpg",
+      "frase_de_impacto_curso": " Domine a Linguagem SQL, visão geral do conceito de processo de software, os fundamentos de requisitos e visão geral de técnicas para elicitação de requisitos e muito mais. ",
+      "descricao_curso": "O curso aborda temas como: Linguagem SQL. Visão geral do conceito de processo de software. Fundamentos de requisitos e visão geral de técnicas para elicitação de requisitos. Tipos de requisitos: funcionais e não funcionais. Prototipação não funcional. Análise e projeto orientado a objetos. Notação UML (Unified Modeling Language). Modelo de casos de uso (diagrama e especificação). User stories. Diagrama de classes. Diagrama de sequência. Diagrama de estados. Diagrama de atividades. Diagrama de componentes. Diagrama de implantação. Análise e projeto de banco de dados. Modelo entidade relacionamento. Modelo relacional e normalização. Modelo lógico e físico de banco de dados.Operações matemáticas básicas com vetores e matrizes. Teoria de conjuntos. Álgebra. Geometria. Raciocínio lógico booleano.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1109\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/modelagem-de-software"
+    },
+    {
+      "curso": "Processamento de Dados Massivos e Modelos de Aprendizado",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Processamento-de-Dados-Massivos-e-Modelos-de-Aprendizado-scaled.jpg",
+      "frase_de_impacto_curso": " Conhecimento acerca do armazenamento massivo de dados, bancos orientados à documento e grafos, modelagem relacional para um banco de dados, definição das regras de acesso e muito mais. ",
+      "descricao_curso": "O curso proporciona conhecimento acerca do armazenamento massivo de dados; Bancos orientados à documento e grafos; Modelagem relacional para um banco de dados; Definição das regras de acesso; Formulação de consultas SQL; Modelagem e implementação de base de dados utilizando modelos não relacionais; Bases NoSQL; Introdução à Inteligência Artificial; Técnicas de Aprendizagem de Máquinas; Análise de Dados baseadas em Estatística; Técnicas de Agrupamento e Técnicas de regressão.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=323\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/processamento-de-dados-massivos-e-modelos-de-aprendizado"
+    },
+    {
+      "curso": "Programação de Soluções Computacionais",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/PROGRAMACAO-DE-SOLUCOES-COMPUTACIONAIS-scaled.jpg",
+      "frase_de_impacto_curso": " Uma imersão em algoritmos e suas representações, operações matemáticas básicas com vetores e matrizes, além de uma programação orientada a objetos: classes, objetos, métodos, atributos, construtores e métodos de acesso e modificadores. ",
+      "descricao_curso": "O curso proporciona uma imersão em algoritmos e suas representações, operações matemáticas básicas com vetores e matrizes, além de uma programação orientada a objetos: classes, objetos, métodos, atributos, construtores e métodos de acesso e modificadores.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=970\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/programacao-de-solucoes-computacionais"
+    },
+    {
+      "curso": "Sistemas Computacionais e Segurança",
+      "area_do_conhecimento": "TI & Computação",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/SISTEMAS-COMPUTACIONAIS-E-SEGURANCA-scaled.jpg",
+      "frase_de_impacto_curso": " Aprimore seus conhecimentos em bases de dados, backup, logs e bases numéricas (cálculos numéricos, binários, decimais, octal e hexadecimal). ",
+      "descricao_curso": "O curso aborda temas como políticas de segurança, vulnerabilidades, ameaças e proteção de dados e informações. Você fará uma imersão e, bases de dados, backup, logs e bases numéricas (cálculos numéricos, binários, decimais, octal e hexadecimal).",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=982\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/sistemas-computacionais-e-seguranca"
+    },
+    {
+      "curso": "Vida e Carreira",
+      "area_do_conhecimento": "Arquitetura e Urbanismo & Design;Engenharias;TI & Computação;Ciências Agrárias & Meio Ambiente;Ciências Biológicas & da Saúde;Ciências Humanas;Ciências Jurídicas;Gestão & Negócios;Comunicação & Artes",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/04/Vida-e-carreira.png",
+      "frase_de_impacto_curso": " Esse curso vai te auxiliar no desenvolvimento de sua carreira e te preparar para os desafios do mercado de trabalho.\r\n\r\n.",
+      "descricao_curso": "O curso tem o objetivo de auxiliar na compreensão das novas demandas do mundo do trabalho, potencializar a carreira a partir  das necessidades do profissional, preparar para os desafios e tendências do mercado. Além disso, desenvolver as competências socioemocionais mais requisitadas.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1956",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/vida-e-carreira"
+    }
+  ]
+}

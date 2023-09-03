@@ -37,26 +37,54 @@ const Keywords = [
   "projetos."
 ];
 
-function verificarEngenharia(filteredParts) {
-  let count = 0;
+function wordCounts(tokens) {
+  const counts = {};
+  for (const token of tokens) {
+    counts[token.toLowerCase()] = (counts[token.toLowerCase()] || 0) + 1;
+  }
+  return counts;
+}
 
-  for (const part of filteredParts) {
-    if (part) { // Verifica se 'part' não é undefined ou null
-      const normalizedPart = part.toLowerCase().replace(/'/g, '');
-      for (const keyword of Keywords) {
-        if (keyword) { // Verifica se 'keyword' não é undefined ou null
-          const normalizedKeyword = keyword.toLowerCase().replace(/'/g, '');
-          if (normalizedKeyword === normalizedPart) { // Verifica igualdade exata
-            count++;
-            break;
+function keywordProximity(tokens, keywords) {
+  const proximity = {};
+  tokens = tokens.map(token => token.toLowerCase()); // Converte todos os tokens para minúsculas
+  
+  keywords.forEach(keyword => {
+    proximity[keyword] = {};
+    tokens.forEach((token, index) => {
+      if (keyword === token) {
+        for (let offset = -3; offset <= 3; offset++) {
+          const neighbor = tokens[index + offset];
+          if (neighbor && neighbor !== keyword) {
+            proximity[keyword][neighbor] = (proximity[keyword][neighbor] || 0) + 1;
           }
         }
       }
-    }
-  }
+    });
+  });
 
-  return count;
+  return proximity;
 }
 
-module.exports = verificarEngenharia;
+function analyzeInterest(wordArray) {
+  const tokens = wordArray; // assume que a entrada é um array de palavras
+  const counts = wordCounts(tokens);
+
+  let healthScore = 0;
+  const proximities = keywordProximity(tokens, Keywords);
+
+  Keywords.forEach(keyword => {
+    healthScore += (counts[keyword] || 0);
+    
+    for (const score of Object.values(proximities[keyword] || {})) {
+      healthScore += score;
+    }
+  });
+
+  const proximityPercentage = (healthScore / tokens.length) * 100;
+
+  return proximityPercentage > 0 ? `${proximityPercentage}` : '0';
+}
+
+module.exports = analyzeInterest;
     

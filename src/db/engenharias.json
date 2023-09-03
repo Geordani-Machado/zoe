@@ -1,0 +1,130 @@
+{
+  "cursos": [
+    {
+      "curso": "Análise de Fenômenos Físicos da Natureza",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/ANALISE-DE-FENOMENOS-FISICOS-DA-NATUREZA-scaled.jpg",
+      "frase_de_impacto_curso": " Vivencie os principais temas dos fenômenos fisicos da natureza  ",
+      "descricao_curso": "O curso aborda e apresenta temas como: Medidas e grandezas físicas. Funções matemáticas. Princípio da inércia.Princípio fundamental da dinâmica.Otimização de funções e derivadas.Movimento, gráficos e funções horárias. Grandezas vetoriais. Representação e operações com vetores. Composição e decomposição de forças. Funções trigonométricas e fundamentos do cálculo de integrais para a física. Sistemas conservativos e dissipativos.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1077\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/analise-de-fenomenos-fisicos-da-natureza"
+    },
+    {
+      "curso": "Computação em Nuvem",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/COMPUTACAO-NA-NUVEM-scaled.jpg",
+      "frase_de_impacto_curso": " Desenvolva competências profissionais na área da tecnologia, relacionamento entre computação em nuvem, inteligência de negócio, ciência de dados, de inovação tecnológica, inteligência artificial, aprendizagem de máquina e robotização ",
+      "descricao_curso": "O curso aborda conceitos e estrutura da computação em nuvem e tem como objetivo o desenvolvimento de competências profissionais na área da tecnologia, relacionamento entre computação em nuvem, inteligência de negócio, ciência de dados, de inovação tecnológica, inteligência artificial, aprendizagem de máquina e robotização",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=145\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/computacao-em-nuvem"
+    },
+    {
+      "curso": "Engenharia de Segurança e Ergonomia no Trabalho",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/ENGENHARIA-DE-SEGURANCA-E-ERGONOMIA-NO-TRABALHO-scaled.jpg",
+      "frase_de_impacto_curso": " Atue com excelencia no controle da qualidade de processos, análise ergonômica do trabalho e saúde ocupacional na empresa ",
+      "descricao_curso": "O Curso se destina a profissionais que desejam atuar no controle da qualidade de processos, análise ergonômica do trabalho e saúde ocupacional na empresa, bem como no desenvolvimento de soluções que transformem as condições do trabalho e melhorem a produtividade nas organizações.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=148\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/engenharia-de-seguranca-e-ergonomia-no-trabalho"
+    },
+    {
+      "curso": "Engenharia, Preparação e Visualização de Dados",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Engenharia-Preparacao-e-Visualizacao-de-dados-scaled.jpg",
+      "frase_de_impacto_curso": " Conheça sobre qualidade de dados, tratamento e preparação de dados, ferramentas e técnicas de processamento de dados, visualização da Informação, arquiteturas de interação e muito mais. ",
+      "descricao_curso": "O Curso aborda a Qualidade de dados, tratamento e preparação de dados, ferramentas e técnicas de processamento de dados, visualização da Informação, arquiteturas de interação, métodos e técnicas de organização e visualização de dados, dashboard design, ferramentas para visualização de dados.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1018\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/engenharia-preparacao-e-visualizacao-de-dados"
+    },
+    {
+      "curso": "Fenômenos elétricos, magnéticos e oscilatórios",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/05/Fenomenos-Eletricos-Magneticos-e-Oscilatorios-scaled.jpg",
+      "frase_de_impacto_curso": "Pronto para potencializar a transformação tecnológica? Amplie seus conhecimentos sobre elétricos, magnéticos e oscilatórios.",
+      "descricao_curso": "Ímãs de geladeira, circuitos e placas de computadores, leitores de CD/DVD e usinas hidroelétricas. De simples itens decorativos até a produção de eletricidade, os fenômenos elétricos, magnéticos e oscilatórios são de extrema relevância à engenharia e à sociedade.\r\n<br><br>\r\n\r\nNão tem como negar! A ciência da eletricidade estática e a ciência do magnetismo mudaram o curso da história da humanidade, fomentando a transformação tecnológica, econômica e de produção de bens e serviços nos diversos segmentos do mercado.\r\n<br><br>\r\n\r\nNeste curso você vai aprender sobre vetores e aplicações, cálculo vetorial, princípios da eletrostática, carga elétrica e campo elétrico, gauss e aplicações, corrente e resistência elétrica, introdução a circuitos elétricos, campo magnetostático, lei de Faraday, oscilações eletromagnéticas e princípios dos transformadores. <br><br>",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1822",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/fenomenos-eletricos-magneticos-e-oscilatorios"
+    },
+    {
+      "curso": "Medição em Ciências e Representação Gráfica",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/MEDICAO-EM-CIENCIAS-E-REPRESENTACAO-GRAFICA-scaled.jpg",
+      "frase_de_impacto_curso": " Capacite-se para o manuseio e utilização de materiais de desenho técnico e outras perspectivas. ",
+      "descricao_curso": "O curso tem foco na capacitação para o manuseio e utilização de materiais de desenho técnico, além de apresentar a aprofundar tópicos como:\r\n- Normalização: Caligrafia técnica, tipos de linhas, colocação de cotas e procedimentos de cotagem, escalas.\r\n- Projeções cilíndricas: Perspectivas cavaleira e isométrica.\r\n- Projeções Ortográficas: Método mongeano.\r\n- Projeções ortográficas seccionadas: Hachuras, corte total, meio corte, corte por planos paralelos (desvio), corte em paredes delgadas ou nervuras, corte rotacionado, corte auxiliar, corte parcial e seções.\r\n- Desenho Auxiliado por Computador (CAD): Representação e construção bi e tri dimensional de peças e sólidos.\r\n- Sistemas de unidades: Sistema Internacional de Unidades SI.\r\n- Erros e incertezas na medição.\r\n- Metrologia Científica (instrumentação, tolerâncias, ajustes, controle dimensional, tolerância geométrica e rugosidade superficial).\r\n- Gestão dos instrumentos de medição.\r\n- Calibradores.\r\n- Medição de roscas e ângulos.\r\n- Medição por comparação.\r\n- Paquímetros, micrômetros, rugosímetro e relógio comparador.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1068",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/medicao-em-ciencias-e-representacao-grafica"
+    },
+    {
+      "curso": "Métodos de Otimização Aplicados a Sistemas Elétricos de Potência",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/Metodos-de-Otimizacao-Aplicados-a-Sistemas-Eletricos-de-Potencia-copiar-scaled.jpg",
+      "frase_de_impacto_curso": " Te proporcionará conhecimento acerca da técnica de solução de problemas por otimização. Programação linear. Programação linear inteira. Programação Dinâmica. Método de busca Heurística. Algoritmos evolutivos ",
+      "descricao_curso": "O Curso proporciona conhecimento acerca da técnica de solução de problemas por otimização. Programação linear. Programação linear inteira. Programação Dinâmica. Método de busca Heurística. Algoritmos evolutivos. Programação não linear Método de Newton.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1042\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/metodos-de-otimizacao-aplicados-a-sistemas-eletricos-de-potencia"
+    },
+    {
+      "curso": "Modelagem e Simulação de Sistemas Elétricos e Magnéticos",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/MODELAGEM-E-SIMULACAO-DE-SISTEMAS-ELETRICOS-E-MAGNETICOS-scaled.jpg",
+      "frase_de_impacto_curso": " Faça uma imersão em sistemas lineares, gráficos e funções, equações diferenciais de primeira e segunda ordem, além da compreensão de métodos numéricos como Gauss, Gauss-Jacobi, Gauss-Seidel e Matriz Inversa. ",
+      "descricao_curso": "O curso proporciona uma imersão em sistemas lineares, gráficos e funções, equações diferenciais de primeira e segunda ordem, além da compreensão de métodos numéricos como Gauss, Gauss-Jacobi, Gauss-Seidel e Matriz Inversa.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=959\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/modelagem-e-simulacao-de-sistemas-eletricos-e-magneticos"
+    },
+    {
+      "curso": "Monitoramento Ambiental",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/05/Monitoramento-Ambiental-scaled.jpg",
+      "frase_de_impacto_curso": "Na natureza, tudo é questão de equilíbrio! Aprenda a analisar a qualidade do ar, da água e do solo e como usar recursos naturais de forma consciente.",
+      "descricao_curso": "O meio ambiente possui uma dinâmica natural baseada no equilíbrio entre os processos bioquímicos. E é justamente esse mecanismo que permite a manutenção da vida na Terra. Mas como garantir que esse processo não sofra interferências humanas capazes de extinguir recursos naturais?\r\n<br><br>\r\n\r\nO monitoramento ambiental usa dados climatológicos, características físicas e químicas do ambiente e se embasa em legislações e normas com intuito de promover um menor impacto no equilíbrio natural e, como consequência, um desenvolvimento sustentável.\r\n<br><br>\r\n\r\nNeste curso de Monitoramento Ambiental, você vai aprender a verificar de forma crítica os parâmetros de qualidade da atmosfera, do meio aquático e do meio terrestre. Além de conhecer as legislações pertinentes, os equipamentos e os métodos de análise ambiental e a confecção de resultados e estudos de correlação com fontes poluidoras. O conteúdo ainda contempla diferenciar os aspectos climatológicos e meteorológicos e estudar os padrões de qualidade nacionais e internacionais.\r\n<br><br>",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1826",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/monitoramento-ambiental"
+    },
+    {
+      "curso": "Novas Tecnologias e a Internet das Coisas",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/NOVAS-TECNOLOGIAS-E-A-INTERNET-DAS-COISAS-scaled.jpg",
+      "frase_de_impacto_curso": " Vivencie os temas concernentes à área, desde  a Introdução à IoT e aplicações de IoT, noções de redes de comunicações de dados, redes TCP/IPv4 e IPv6 até a  internet; redes de sensores e muito mais. ",
+      "descricao_curso": "O curso reúne os temas concernentes à área, desde  a Introdução à IoT e aplicações de IoT; Noções de redes de comunicações de dados; Redes TCP/IPv4 e IPv6 e a Internet; Redes de sensores; Noções a respeito dos padrões de redes de comunicação sem fio aplicáveis a IoT; Soluções de comunicação para IoT, passando pelo entendimento das noções sobre protocolos de comunicação para IoT; Segurança em IoT; Noções de prototipagem rápida de soluções para IoT; Arquiteturas e Middleware, até banco de dados para IoT; Big Data e analytics em IoT; Modelo de negócios e design de serviços para IoT.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=151\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/novas-tecnologias-e-a-internet-das-coisas"
+    },
+    {
+      "curso": "Operações de Manufatura e de Serviços",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/OPERACOES-DE-MANUFATURA-E-DE-SERVICOS-scaled.jpg",
+      "frase_de_impacto_curso": " Preparare-se para controlar e gerenciar os recursos do setor produtivo de uma empresa, bem como analisar as influências globais em termos de tecnologia, economia e muito mais. ",
+      "descricao_curso": "O Curso se destina a profissionais que buscam prepararem-se para controlar e gerenciar os recursos do setor produtivo de uma empresa, bem como analisar as influências globais em termos de tecnologia, economia, ambiente, política e sociedade sobre um novo modelo de indústria inteligente com máquinas e sistemas conectados para tomar decisões que melhoram a produtividade.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=154\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/operacoes-de-manufatura-e-de-servicos"
+    },
+    {
+      "curso": "Planejamento e controle da produção",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/05/Planejamento-e-Controle-da-Producao-scaled.jpg",
+      "frase_de_impacto_curso": "Não existe produção bem sucedida sem planejamento estratégico e controle eficaz. Descubra como se tornar um expert na gestão de produção.",
+      "descricao_curso": "Planejar é algo intrínseco às ações humanas. Seja para marcar um encontro com os amigos no final de semana ou até mesmo para definir qual carreira seguir, é preciso muito planejamento. E nas empresas isso não é diferente!\r\n<br><br>\r\n\r\nAs atividades precisam ser planejadas em longo, médio e curto prazo, a fim de garantir a execução das atividades de forma satisfatória. Um bom gestor de produção é capaz de contextualizar a operação dentro das necessidades do seu mercado e entender a melhor forma de alinhá-la com a visão estratégica da empresa.\r\n<br><br>\r\n\r\nE é justamente isso que você vai aprender neste curso, por meio de conceitos como planejamento de vendas e operações (PVO), sistemas produtivos e PCP, planejamento e controle estratégico de produção, planejamento-mestre de produção (PMP), gestão de estoques, sistema modular tipo MRP E MRP II, aplicações da Teoria das Restrições (TOC), sistemas de produção enxuta e novas técnicas de produção (JIT, Kanban, Lean manufacturing).\r\n<br><br>",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1829",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/planejamento-e-controle-da-producao"
+    },
+    {
+      "curso": "Sistemas para Monitoramento Climático",
+      "area_do_conhecimento": "Engenharias",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/03/SISTEMAS-PARA-MONITORAMENTO-CLIMATICO-scaled.jpg",
+      "frase_de_impacto_curso": " Seja um expert em análise de dados ambientais, sistemas e fenômenos meteorológicos para monitoramento do tempo, modelagem hidrológica aplicada a um sistema de monitoramento de bacias hidrográficas e muito mais. ",
+      "descricao_curso": "Aprimore seus conhecimentos acerca da Análise de dados ambientais, sistemas e fenômenos meteorológicos para monitoramento do tempo; Modelagem hidrológica aplicada a um sistema de monitoramento de bacias hidrográficas; Monitoramento de variáveis geológicas e geotécnicas na prevenção de desastres naturais; Tecnologia da Informação aplicada ao monitoramento ambiental; Fundamentos de cartografia e geoprocessamento aplicados ao mapeamento de riscos e monitoramento e alerta de desastres naturais.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=157\r\n",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/sistemas-para-monitoramento-climatico"
+    },
+    {
+      "curso": "Vida e Carreira",
+      "area_do_conhecimento": "Arquitetura e Urbanismo & Design;Engenharias;TI & Computação;Ciências Agrárias & Meio Ambiente;Ciências Biológicas & da Saúde;Ciências Humanas;Ciências Jurídicas;Gestão & Negócios;Comunicação & Artes",
+      "banner_do_curso": "https://pos.una.br/app/uploads/2023/04/Vida-e-carreira.png",
+      "frase_de_impacto_curso": " Esse curso vai te auxiliar no desenvolvimento de sua carreira e te preparar para os desafios do mercado de trabalho.\r\n\r\n.",
+      "descricao_curso": "O curso tem o objetivo de auxiliar na compreensão das novas demandas do mundo do trabalho, potencializar a carreira a partir  das necessidades do profissional, preparar para os desafios e tendências do mercado. Além disso, desenvolver as competências socioemocionais mais requisitadas.",
+      "link_de_inscricao": "https://inscricao.onelearning.com.br/?add-to-cart=1956",
+      "link_para_pagina": "https://www.onelearning.com.br/curso/vida-e-carreira"
+    }
+  ]
+}
