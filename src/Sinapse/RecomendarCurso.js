@@ -1,13 +1,16 @@
 const fs = require('fs'); // Importa o módulo de sistema de arquivos
+const path = require('path');
 
 function buscarCincoCursos(area) {
   let arquivoJsonPath;
   let cursosJson;
 
+  console.log(area);
+
   // Determina qual arquivo JSON ler com base na área de conhecimento
   switch(area) {
     case "ArquiteturaeUrbanismoDesign":
-      arquivoJsonPath = '../db/arquitetura-e-urbanismo-design.json';
+      arquivoJsonPath = path.resolve(__dirname, '../db/arquitetura-e-urbanismo-design.json');
       break;
     // Adicione mais casos aqui para outras áreas
     default:
@@ -15,11 +18,15 @@ function buscarCincoCursos(area) {
   }
 
   // Lê o arquivo JSON
+  try {
   const data = fs.readFileSync(arquivoJsonPath, 'utf-8');
   cursosJson = JSON.parse(data);
-
+} catch (e) {
+  console.error("Ocorreu um erro ao ler o arquivo:", e);
+  return null;
+}
   // Filtra os cursos que correspondem à área de conhecimento fornecida
-  const cursosFiltrados = cursosJson.cursos.filter(curso => curso.area_do_conhecimento === area);
+  const cursosFiltrados = cursosJson.cursos.filter(curso => curso.area_do_conhecimento);
 
   // Embaralha o array de cursos filtrados
   const cursosEmbaralhados = cursosFiltrados.sort(() => 0.5 - Math.random());

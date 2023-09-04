@@ -233,68 +233,60 @@ app.post('/api/createFile', (req, res) => {
 
     // Substituído pelo novo conteúdo de arquivo
     const fileContent = `
-    const Keywords = ${formattedKeywords};
+    const Keywords = 
+    ${formattedKeywords};
 
-      function tokenize(text) {
-        return text.toLowerCase().split(/\\s+/).map(word => word.replace(/[.,!?;]/, ''));
+    function wordCounts(tokens) {
+      const counts = {};
+      for (const token of tokens) {
+        counts[token.toLowerCase()] = (counts[token.toLowerCase()] || 0) + 1;
       }
-
-      function wordCounts(tokens) {
-        const counts = {};
-        for (const token of tokens) {
-          counts[token] = (counts[token] || 0) + 1;
-        }
-        return counts;
-      }
-
-      function keywordProximity(tokens, keywords) {
-        const proximity = {};
-        
-        keywords.forEach(keyword => {
-          proximity[keyword] = {};
-          tokens.forEach((token, index) => {
-            if (keyword === token) {
-              for (let offset = -3; offset <= 3; offset++) {
-                const neighbor = tokens[index + offset];
-                if (neighbor && neighbor !== keyword) {
-                  proximity[keyword][neighbor] = (proximity[keyword][neighbor] || 0) + 1;
-                }
+      return counts;
+    }
+    
+    function keywordProximity(tokens, keywords) {
+      const proximity = {};
+      tokens = tokens.map(token => token.toLowerCase()); // Converte todos os tokens para minúsculas
+      
+      keywords.forEach(keyword => {
+        proximity[keyword] = {};
+        tokens.forEach((token, index) => {
+          if (keyword === token) {
+            for (let offset = -3; offset <= 3; offset++) {
+              const neighbor = tokens[index + offset];
+              if (neighbor && neighbor !== keyword) {
+                proximity[keyword][neighbor] = (proximity[keyword][neighbor] || 0) + 1;
               }
             }
-          });
-        });
-
-        return proximity;
-      }
-
-      function analyzeInterest(jsonInput) {
-        // Verifica se jsonInput possui uma propriedade text
-        if (!jsonInput || !jsonInput.text || typeof jsonInput.text !== "string") {
-          console.error("Entrada inválida. Um objeto JSON com uma propriedade 'text' é esperado.");
-          return '0.00%';
-        }
-      
-        const text = jsonInput.text;
-        const tokens = tokenize(text);
-        const counts = wordCounts(tokens);
-      
-        let healthScore = 0;
-        const proximities = keywordProximity(tokens, Keywords);
-      
-        Keywords.forEach(keyword => {
-          healthScore += (counts[keyword] || 0);
-          for (const score of Object.values(proximities[keyword] || {})) {
-            healthScore += score;
           }
         });
-      
-        const proximityPercentage = (healthScore / tokens.length) * 100;
-      
-        return proximityPercentage > 0 ? \`${proximityPercentage.toFixed(2)}%\` : '0.00%';
-      }
-
-      module.exports = analyzeInterest;
-    `;
+      });
+    
+      return proximity;
+    }
+    
+    function analyzeInterest(wordArray) {
+      const tokens = wordArray; // assume que a entrada é um array de palavras
+      const counts = wordCounts(tokens);
+    
+      let healthScore = 0;
+      const proximities = keywordProximity(tokens, Keywords);
+    
+      Keywords.forEach(keyword => {
+        healthScore += (counts[keyword] || 0);
+        
+        for (const score of Object.values(proximities[keyword] || {})) {
+          healthScore += score;
+        }
+      });
+    
+      const proximityPercentage = (healthScore / tokens.length) * 100;
+    
+      return proximityPercentage > 0 ? proximityPercentage : '0';
+    }
+    
+    module.exports = analyzeInterest;
+  `;
 
     // Write the content to the new file
     fs.writeFile(filePath, fileContent, (err) => {

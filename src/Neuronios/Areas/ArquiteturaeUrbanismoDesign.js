@@ -105,7 +105,7 @@ function analyzeInterest(wordArray) {
 
   const proximityPercentage = (healthScore / tokens.length) * 100;
 
-  return proximityPercentage > 0 ? `${proximityPercentage}` : '0';
+  return proximityPercentage > 0 ? proximityPercentage : '0';
 }
 
 module.exports = analyzeInterest;

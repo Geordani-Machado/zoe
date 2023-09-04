@@ -18,6 +18,10 @@ const options = {
           name: 'Edição e Configuração',
           description: 'operações relacionadas à edição de arquivos e palavras chaves para alimentar a Ai e apromorar seus parametros',
         },
+        {
+          name:'Stop Words',
+          description: 'Palavras que a Ai desconsidera na hora de fazer a interpretação de relação e intenção'
+        }
       ],
     },
     
