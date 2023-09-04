@@ -445,6 +445,3 @@ app.listen(port, () => {
 
 
 //const fetchAndProcessCourses = require('./fetchAndProcessCourses.js');  // Substitua pelo nome do arquivo que contém a função
-
-
-
