@@ -1,7 +1,6 @@
 
-    const Keywords = 
-    [
-  "teste"
+const Keywords = [
+    "Esportes coletivos"
 ];
 
     function wordCounts(tokens) {

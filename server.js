@@ -233,8 +233,7 @@ app.post('/api/createFile', (req, res) => {
 
     // Substituído pelo novo conteúdo de arquivo
     const fileContent = `
-    const Keywords = 
-    ${formattedKeywords};
+    const Keywords = ${formattedKeywords};
 
     function wordCounts(tokens) {
       const counts = {};
@@ -390,7 +389,7 @@ app.get('/api/listarAreas', (req, res) => {
  */
 app.put('/api/updateKeywords/:area', (req, res) => {
   const area = req.params.area;
-  const keywords = req.body.keywords;
+  const keywords = req.body.keywords; 
 
   const filePath = path.join(__dirname, 'src', 'Neuronios', 'Areas', `${area}.js`);
 
@@ -407,18 +406,21 @@ function updateKeywordsInFile(filePath, keywords) {
   let content = fs.readFileSync(filePath, 'utf-8');
 
   const startTag = 'const Keywords = [';
+  const endTag = '];';
   const startIndex = content.indexOf(startTag);
 
   if (startIndex !== -1) {
-      const endIndex = content.indexOf('];', startIndex);
-      const existingKeywords = content.substring(startIndex + startTag.length, endIndex);
-
-      const updatedKeywords = JSON.stringify(keywords, null, 4).replace(/"/g, '\\"');
-
-      content = content.replace(existingKeywords, updatedKeywords);
+    const endIndex = content.indexOf(endTag, startIndex);
+    if (endIndex !== -1) {
+      const existingKeywordsSegment = content.substring(startIndex, endIndex + endTag.length);
+      const updatedKeywords = JSON.stringify(keywords, null, 4);
+      const newKeywordsSegment = `${startTag}${updatedKeywords.slice(1, -1)}${endTag}`;
+      content = content.replace(existingKeywordsSegment, newKeywordsSegment);
       fs.writeFileSync(filePath, content);
+    }
   }
 }
+
 
 function extractKeywords(content) {
   const keywordRegex = /const\s+Keywords\s*=\s*\[([\s\S]*?)\]/;
