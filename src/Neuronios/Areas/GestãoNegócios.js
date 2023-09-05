@@ -1,6 +1,35 @@
-
 const Keywords = [
-  "teste"
+  "negociação",
+  "administrar",
+  "plano de negócios",
+  "gestão empresarial",
+  "estratégia de marketing",
+  "contabilidade",
+  "gestão de vendas",
+  "recursos humanos",
+  "organização",
+  "pesquisa e desenvolvimento",
+  "investimento",
+  "logistica",
+  "visão de mercado",
+  "fluxo de caixa",
+  "clientes",
+  "tomada de decisão",
+  "liderança",
+  "gestão de projetos",
+  "pesquisa de mercado",
+  "produto",
+  "vendas",
+  "lucro",
+  "receita",
+  "comunicação",
+  "parcerias",
+  "inovação",
+  "responsabilidade social",
+  "patrimônio",
+  "empreendedorismo",
+  "publico alvo",
+  "valor de marca",
 ];
 
     function wordCounts(tokens) {
