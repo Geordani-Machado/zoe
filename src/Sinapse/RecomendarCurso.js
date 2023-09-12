@@ -12,7 +12,7 @@ function buscarCincoCursos(area) {
     case "ArquiteturaeUrbanismoDesign":
       arquivoJsonPath = path.resolve(__dirname, '../db/arquitetura-e-urbanismo-design.json');
       break;
-    // Adicione mais casos aqui para outras áreas
+    
     default:
       return "Área de conhecimento não encontrada"; // ou return null;
   }

@@ -6,7 +6,6 @@ const buscarCincoCursos = require('../Sinapse/RecomendarCurso');
 function verificarAreaDeConhecimento(Parts) {
   const results = {};
   let cursos = null;  // Inicializa a variável para armazenar os cursos
-  let nomeFormatado = null;  // Inicializa a variável para o nome formatado
 
   // Navega uma pasta acima e entra na pasta desejada
   const areasDir = path.join(__dirname, '..', 'Neuronios', 'Areas');
